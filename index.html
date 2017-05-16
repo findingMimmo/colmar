@@ -3,53 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
+    <link href="https://fonts.googleapis.com/css?family=Lusitana:400,700|Raleway:400,700" rel="stylesheet">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
 <!-- header -->
   <header>
-    <div class="logo">
-      <img src="./resources/img/ic-logo.svg" />
-      <h1>COLMAR<span>ACADEMY</span></h1>
+    <div class="container">
+      <div class="logo">
+        <img src="./resources/img/ic-logo.svg" />
+        <h1>COLMAR<span style="color: lightgrey;">ACADEMY</span></h1>
+      </div>
+      <nav>
+        <div id="desktop">
+        <span><a href="#">On Campus</a></span>
+        <span><a href="#">Online</a></span>
+        <span><a href="#">For companies</a></span>
+        <span><a href="#">Sign in</a></span>
+      </div>
+      <div id="mobile-nav">
+        <span><a href="#"><img src="./resources/img/ic-logo.svg" /></a></span>
+        <span><a href="#"><img src="./resources/img/ic-login.svg" /></a></span>
+        <span><a href="#"><img src="./resources/img/ic-on-campus.svg" /></a></span>
+        <span><a href="#"><img src="./resources/img/ic-online.svg" /></a></span>
+      </div>
+      </nav>
     </div>
-    <nav id="desktop">
-      <span><a href="#">On Campus</a></span>
-      <span><a href="#">Online</a></span>
-      <span><a href="#">For companies</a></span>
-      <span><a href="#">Sign in</a></span>
-    </nav>
   </header>
 <!-- main body -->
-  <div class="center">
+  <div class="main-body">
 <!-- mobiel grey block -->
     <div id="mobile-landing">
     </div>
 
 <!-- block 1 -->
-    <div class="banner">
-      <div class="image">
+    <div class="banner" id="desktop-banner">
+      <div class="media-box">
         <img src="./resources/img/banner.jpg" />
       </div>
       <div class="learn">
         <h2>Learn something new everyday</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <a href="#">Start here</a>
       </div>
     </div>
 
 <!-- block 2 -->
     <div class="banner">
-      <div class="information-main">
-        <img src="./resources/img/information-main.jpg" />
-        <div class="practice-text">
-          <h2>It doesn't hurt to keep practicing</h2>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aligquam et commodo letus, nec
-            consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
-            magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <span>Emanuel, Sr Strategist at Hiring.com</span>
+        <div class="media-box">
+          <img src="./resources/img/information-main.jpg" />
+          <div class="practice-text">
+            <h2>It doesn't hurt to keep practicing</h2>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aligquam et commodo letus, nec
+              consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+              magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <span>Emanuel, Sr Strategist at Hiring.com</span>
+          </div>
         </div>
-        <div class="information-sub">
-          <div class="info-box">
+        <div class="learn info-sub">
+          <div class="info-box underline" id="practice">
             <div class="image-sm">
               <img src="./resources/img/information-orientation.jpg" />
             </div>
@@ -59,7 +72,7 @@
               <a href="#">Read more</a>
             </div>
           </div>
-          <div class="info-box">
+          <div class="info-box underline" id="practice">
             <div class="image-sm">
               <img src="./resources/img/information-campus.jpg" />
             </div>
@@ -69,28 +82,25 @@
               <a href="#">Read more</a>
             </div>
           </div>
-          <div class="info-box">
-            <div class="image-sm">
+          <div class="info-box lightgrey underline">
+            <div class="image-sm" id="guest-lecture">
               <img src="./resources/img/information-guest-lecture.jpg" />
             </div>
             <div class="text-box">
-              <h3>Our guest lecture</h3>
+              <h3>Special guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#">Read more</a>
             </div>
           </div>
         </div>
-      </div>
     </div>
 
 <!-- block 3 -->
-    <div class="banner">
+    <div class="center" id="start">
       <h2>Start learning</h2>
       <div class="gallery">
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-software.jpg" />
-          </div>
           <div class="text-box">
             <h3>Software engineering</h3>
             <p>COURSES</p>
@@ -98,9 +108,7 @@
           </div>
         </div>
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-computer-art.jpg" />
-          </div>
           <div class="text-box">
             <h3>Computer art</h3>
             <p>COURSES</p>
@@ -108,19 +116,17 @@
           </div>
         </div>
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-design.jpg" />
-          </div>
           <div class="text-box">
             <h3>Design</h3>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
+      </div>
+      <div class="gallery">
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-data.jpg" />
-          </div>
           <div class="text-box">
             <h3>Data</h3>
             <p>COURSES</p>
@@ -128,9 +134,7 @@
           </div>
         </div>
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-business.jpg" />
-          </div>
           <div class="text-box">
             <h3>Business</h3>
             <p>COURSES</p>
@@ -138,9 +142,7 @@
           </div>
         </div>
         <div class="img-box-md">
-          <div class="img-container">
             <img src="./resources/img/course-marketing.jpg" />
-          </div>
           <div class="text-box">
             <h3>Marketing</h3>
             <p>COURSES</p>
@@ -148,14 +150,22 @@
           </div>
         </div>
       </div>
+      <div class="mobile-gallery">
+        <a href="#"><h3>Software engineer</h3></a>
+        <a href="#"><h3>Computer art</h3></a>
+        <a href="#"><h3>Design</h3></a>
+        <a href="#"><h3>Data</h3></a>
+        <a href="#"><h3>Business</h3></a>
+        <a href="#"><h3>Marketing</h3></a>
+      </div>
     </div>
 
 <!-- block 4 -->
-    <div class="banner">
+    <div class="center" id="exhibit">
       <h2>Thesis exhibit</h2>
-      <div class="container">
-        <div class="vid-box">
-          <video width="320" height="240" controls>
+      <div class="banner">
+        <div class="media-box" id="video">
+          <video width="100%" height="auto" controls>
             <source src="./resources/vid/thesis.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -166,8 +176,9 @@
               magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
         </div>
-        <div class="information-sub">
-          <div class="info-box">
+
+        <div class="learn info-sub" id="mobile-vid-hide">
+          <div class="info-box lightgrey" id="thesis">
             <div class="image-sm">
               <img src="./resources/img/thesis-fisma.jpg" />
             </div>
@@ -176,18 +187,19 @@
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
-          <div class="info-box">
+          <div class="info-box" id="now-and-then">
             <div class="image-sm">
               <img src="./resources/img/thesis-now-and-then.jpg" />
             </div>
             <div class="text-box">
-              <h3>Fisma: Design and</h3>
-              <p>Designer showcase of new prototype product</p>
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
   </div>
 <!-- footer -->

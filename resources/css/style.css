@@ -1,0 +1,393 @@
+html,
+body {
+  font-size: 16px;
+  font-family: 'Lusitana', serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  font-family: 'Lusitana', serif;
+  color: dimgrey;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+}
+
+.media-box {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 60%;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  padding-bottom: .5rem;
+  justify-content: center;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 1rem;
+
+}
+
+.image-sm {
+  width: 35%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem
+}
+
+.lightgrey {
+  background-color: lightgrey;
+}
+
+/* header */
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+nav span {
+  padding-left: 1rem;
+}
+
+nav a {
+  transition: background-color 250ms linear 0s;
+}
+
+nav a:hover {
+  background-color: darkgrey;
+  color: whitesmoke;
+}
+
+nav a:active {
+    background-color: black;
+    color: lightgrey;
+  }
+
+nav a:visited {
+  color: black;
+}
+
+#mobile-nav {
+  display: none;
+}
+  /* media query breakpoint */
+@media only screen and (max-width: 864px) {
+  nav {
+    width: 100%;
+  }
+
+  nav a:hover {
+    background-color: white;
+  }
+
+  nav a:active {
+      background-color: white;
+    }
+
+  #mobile-nav {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* main-body */
+
+.main-body {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+
+#mobile-landing {
+  height: 180px;
+  display: none;
+  background-color: dimgrey;
+}
+
+#desktop-banner {
+  background-color: lightgrey;
+}
+
+.banner .media-box img {
+  width: 100%;
+}
+
+.banner .learn a {
+  text-align: center;
+  width: 95%;
+  padding: .5rem;
+  background-color: dimgrey;
+  color: white;
+  border-radius: 7px;
+  transition: background-color 250ms linear 0s, color 250ms linear 0s;
+}
+
+.banner .learn a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.banner .learn a:active {
+  background-color: black;
+  color: lightgrey;
+}
+
+.banner .learn a:visited {
+  color: black;
+}
+
+/* media query at break point */
+
+@media only screen and (max-width: 864px) {
+  #mobile-landing {
+    display: block;
+  }
+
+  .media-box {
+    display: none;
+  }
+}
+
+/* block 2 */
+
+.image-sm img {
+  width: 100%;
+}
+
+#practice {
+  height: auto;
+}
+
+.info-sub {
+  align-items: flex-start;
+  width: 423px;
+  justify-content: flex-start;
+  border-left: 1px solid lightgrey;
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+#practice .image-sm {
+  width: 35%;
+}
+
+.info-sub .info-box {
+  width: 100%;
+
+  display: flex;
+  padding: 1rem;
+}
+
+.underline {
+  border-bottom: 1px solid lightgrey;
+}
+
+.text-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.image-sm {
+  width: 65%;
+}
+
+/* gallery */
+.mobile-gallery {
+  display: none;
+  width: 100%;
+}
+
+.mobile-gallery a {
+  padding: .5rem;
+}
+
+.mobile-gallery h3 {
+  padding: 1rem;
+  background-color: lightgrey;
+  margin: 0 1rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.img-box-md {
+  width: 30%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.img-box-md img {
+  width: 100%;
+}
+
+#start {
+  background-color: whitesmoke;
+}
+
+
+/* thesis */
+
+.learn .info-box {
+  width: 423px;
+  height: 186px;
+
+}
+
+#thesis .image-sm{
+  width: auto;
+}
+
+#now-and-then .image-sm {
+  width: 45%;
+}
+
+#exhibit{
+  padding-bottom: 0;
+}
+
+#exhibit h2 {
+  margin-bottom: 0;
+}
+
+#exhibit .learn {
+  border: 0;
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  margin: 0 1.5rem;
+  align-items: center;
+  height: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid lightgrey;
+}
+
+footer p {
+  flex-grow: 1;
+}
+
+footer .footer-link a {
+  transition: background-color 250ms linear 0s, color 250ms linear 0s;
+}
+
+footer .footer-link a:hover {
+  background-color: darkgrey;
+  color: whitesmoke;
+}
+
+footer .footer-link a:active {
+  background-color: black;
+  color: lightgrey;
+}
+
+@media only screen and (max-width: 864px) {
+  .info-sub {
+    width: 100%;
+    align-items: center;
+    border: none;
+  }
+  .underline {
+    border-bottom: none;
+  }
+  .learn .info-box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightgrey {
+    background-color: whitesmoke;
+  }
+
+    #practice .image-sm {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-sm {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-sm img{
+    width: auto;
+  }
+
+  .mobile-gallery{
+    display: block;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  #video {
+    display: block;
+    width: 100%;
+  }
+  .practice-text {
+    display: none;
+  }
+  #mobile-vid-hide {
+    display: none;
+  }
+
+  .footer-link {
+    display: none;
+  }
+
+  footer p {
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+  }
+
+  footer {
+    height: 56px;
+    padding-bottom: 0;
+  }
+}
