@@ -245,7 +245,19 @@ nav a:visited {
   padding: 1rem;
   background-color: lightgrey;
   margin: 0 1rem;
+  border-radius: 7px;
+  transition: background-color 250ms linear 0s, color 250ms linear 0s;
 }
+
+.mobile-gallery h3:hover {
+  background-color: white;
+  color: black;
+}
+
+.mobile-gallery h3:visited {
+  color: black;
+}
+
 
 .gallery {
   display: flex;
@@ -341,7 +353,7 @@ footer .footer-link a:active {
   }
 
   .lightgrey {
-    background-color: whitesmoke;
+    background-color: white;
   }
 
     #practice .image-sm {
